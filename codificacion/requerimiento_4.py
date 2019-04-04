@@ -17,10 +17,9 @@ def R4(fecha):
         dia = fecha[2]
         dias_meses = [31,28,31,30,31,30,31,31,30,31,30,31] #Los días que posee cada mes en orden de izquierda a derecha
     
-        i = 0
         cantidad_dias = 0
         
-        while i < mes - 1: #Sumar todos los días desde enero hasta mes anterior
+        for i in range(mes- 1): #Sumar todos los días desde enero hasta mes anterior
             cantidad_dias += dias_meses[i]
             i += 1
             
