@@ -9,7 +9,7 @@ Entradas: "dia_siguiente": es una fecha válida en forma de tupla.
 Salidas: La fecha correspondiente al día siguiente de la entrada.
 Restricciones: Si es el útlimo día del último mes, aumentar el año.
                Si es el último día del mes, aumentar el mes.
-               Si no es el último día del mes, amuentar el día.
+               Si no es el último día del mes, aumentar el día.
 """
 
 def R3(dia_siguiente):
