@@ -12,7 +12,7 @@ Restricciones: El año ingresado debe de ser mayor a 1582, que es cuando se empi
 """
 
 def R5(dia_primero_enero):
-    if(dia_primero_enero>1582):    
+    if(dia_primero_enero>=1582):    
         return calcularDoomsday((dia_primero_enero,1,1))
     else:
         return "El año no pertenece al claendario Gregoriano."
