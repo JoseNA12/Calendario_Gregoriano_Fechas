@@ -15,7 +15,7 @@ def R5(dia_primero_enero):
     if(dia_primero_enero>=1582):    
         return calcularDoomsday((dia_primero_enero,1,1))
     else:
-        return "El año no pertenece al claendario Gregoriano."
+        return "El año no pertenece al calendario Gregoriano."
 
 
 def calcularDoomsday(fecha):
