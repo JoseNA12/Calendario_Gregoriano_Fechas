@@ -6,6 +6,7 @@ Entradas: "fecha_es_tupla": lista en forma de tupla con valores enteros positivo
 Salidas: Booleano: True si la tupla es valida. False si la tupla no es valida
 Restricciones: El parametro de entrada tiene que ser una lista de 3 elementos, siendo estos numeros enteros positivos
 """
+
 def R0(fecha_es_tupla):
     if (len(fecha_es_tupla) == 3): 		    # Verificar que la longitud de la tupla sea la correcta
         for i in range(0, 3):			    # Iterar en un rango de 0 a 2 sobre la tupla para accesar los valores
