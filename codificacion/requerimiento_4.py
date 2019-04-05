@@ -11,13 +11,14 @@ import requerimiento_0
 import requerimiento_1
 import requerimiento_2
 
+
 def R4(dias_desde_primero_enero):
     if ((requerimiento_0.R0(dias_desde_primero_enero)) and (requerimiento_2.R2(dias_desde_primero_enero))):
         anio = dias_desde_primero_enero[0]
         mes = dias_desde_primero_enero[1]
         dia = dias_desde_primero_enero[2]
         dias_meses = [31,28,31,30,31,30,31,31,30,31,30,31] #Los dias que posee cada mes en orden de izquierda a derecha
-    
+
         cantidad_dias = 0
         
         for i in range(mes- 1): #Sumar todos los dias desde enero hasta mes anterior

@@ -9,13 +9,17 @@ Entradas: "dia_primero_enero": es un año del cual se quiere saber el día que f
 Salidas: El número del día correspondiente según los siguientes valores:
          0 = domingo, 1 = lunes, 2 = martes, 3 = miércoles, 4 = jueves, 5 = viernes, 6 = sábado.
 Restricciones: El año ingresado debe de ser mayor a 1582, que es cuando se empieza a utilizar el calendario Gregoriano.
+               Además, debe ser un numero entero
 """
 
 def R5(dia_primero_enero):
-    if(dia_primero_enero>1582):    
-        return calcularDoomsday((dia_primero_enero,1,1))
+    if (type(dia_primero_enero) is int):                                        #Validar el tipo del parametro
+        if(dia_primero_enero>=1582):    
+            return calcularDoomsday((dia_primero_enero,1,1))
+        else:
+            return "El año no pertenece al calendario Gregoriano."
     else:
-        return "El año no pertenece al claendario Gregoriano."
+        return "Formato inválido"
 
 
 def calcularDoomsday(fecha):
