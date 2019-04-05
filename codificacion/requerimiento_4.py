@@ -7,11 +7,12 @@ Salidas: Entero: Sumatoria de la cantidad de días transcurridos entre el 1 de E
 Restricciones: El parametro de entrada tiene que ser una lista de 3 elementos, siendo estos numeros enteros positivos
 """
 
+import requerimiento_0
 import requerimiento_1
 import requerimiento_2
 
 def R4(fecha):
-    if (requerimiento_2.R2(fecha)):
+    if ((requerimiento_0.R0(fecha)) and (requerimiento_2.R2(fecha))):
         anio = fecha[0]
         mes = fecha[1]
         dia = fecha[2]
