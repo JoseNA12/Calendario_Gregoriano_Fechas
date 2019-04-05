@@ -4,7 +4,7 @@
 """
 Entradas: "fecha_es_tupla": lista en forma de tupla con valores enteros positivos
 Salidas: Booleano: True si la tupla es valida. False si la tupla no es valida
-Restricciones: El parametro de entrada tiene que ser una lista de 3 elementos, siendo estos numeros enteros positivos
+Restricciones: El parametro de entrada tiene que ser una lista de 3 elementos, siendo estos numeros enteros positivos, excluyendo el 0
 """
 
 def R0(fecha_es_tupla):
