@@ -103,10 +103,10 @@ def imprimir_R6(calendario,anio):
                 strsFila = ""
                 for i in range(num_mes,cantidad): # Establece la cantidad de meses a mostrar por fila
                     for k in range(len(calendario[i][j])): #Recorre cada  elemento. La idea es ir aumentando k, luego i y por último j.
-                        if (type(calendario[i][j][k]) is int) and (calendario[i][j][k]>9):
+                        if (type(calendario[i][j][k]) is int) and (calendario[i][j][k]>9): # Si es un número mayor a 9 disminuir los espacios añadidos para que no se descuadre
                             strsFila += str(calendario[i][j][k])+" "
                         else:
-                            strsFila += str(calendario[i][j][k])+"  "
+                            strsFila += str(calendario[i][j][k])+"  " # Si es núm de un dígito añadir un espacio más
                         if((k % 6 == 0) and (k!=0)):
                             strsFila += " |   "
                 print(strsFila)
