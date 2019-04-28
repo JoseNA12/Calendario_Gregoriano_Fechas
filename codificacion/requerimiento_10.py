@@ -8,7 +8,7 @@ Entradas: "(año, mes)": año es un número entero perteneciente a rango permiti
 Salidas: El número del día correspondiente al primer día del mes en el año indicado según los siguientes valores:
          0 = domingo, 1 = lunes, 2 = martes, 3 = miércoles, 4 = jueves, 5 = viernes, 6 = sábado.
 Restricciones: El año ingresado debe de ser mayor a 1582, que es cuando se empieza a utilizar el calendario Gregoriano
-               El mes ingresado debe petenecer al rango permitido (1≤mes ≤12).
+               El mes ingresado debe pertenecer al rango permitido (1≤mes ≤12).
 """
 import requerimiento_1
 import requerimiento_5
@@ -18,7 +18,7 @@ def dia_inicio_mes (año, mes):
         if(año>1582):                                 #Se valida que el año pertenezca al calendario Gregoriano(año>1582)
             if(mes>0 and mes<13):                     #Se valida que el mes pertenezca al rango válido (1≤ mes ≤12)
                 retorno = requerimiento_5.calcularDoomsday((año,mes,1)) #Se calcula el primer día del mes en el año indicado y se almacena en una variable a ser retornada
-                if(requerimiento_1.R1(año)):          #Si es año bisiesto se resta uno al resultado
+                if(requerimiento_1.R1(año) and mes == 2):          #Si es año bisiesto se resta uno al resultado
                     if retorno == 0:                   #Si es año bisiesto y "retorno=0" retorna el 6 para indicar que es sábado
                         return 6
                     else:                             #Si es año bisiesto y "retorno!=0" se resta 1 a la variable "retorno"
